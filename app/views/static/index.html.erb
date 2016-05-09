@@ -1,2 +1,27 @@
-<h1>Static#index</h1>
-<p>Find me in app/views/static/index.html.erb</p>
+<main class="static-main">
+  <div class="static-inner">
+    <div class="static-contents">
+      <div class="static-issue-contents">
+        課題 :
+        <%= select_tag 'issues[id]' %>
+        <%= link_to '+', '#', class: 'static-add-issue' %>
+      </div>
+      <div class="row static-wait-group">
+        <div id="static-wait-button" class="col-xs-10 static-wait-button">
+          <!--<a href="#" class="btn btn-primary" role="button">順番を待つ</a>-->
+        </div>
+        <div class="col-xs-2 thumbnail static-wait-count">
+          <p class="static-wait-count-title">
+            順番待ち
+          </p>
+          <p id="static-count-waiter" class="static-wait-count-contents">
+            5
+          </p>
+        </div>
+      </div>
+      <div id="static-finish-button" class="static-finish-button">
+
+      </div>
+    </div>
+  </div>
+</main>

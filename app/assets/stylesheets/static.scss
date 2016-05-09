@@ -1,3 +1,119 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.static-main {
+  padding: 150px 0 250px;
+}
+
+.static-inner {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.static-contents {
+}
+
+.static-issue-contents {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.static-add-issue {
+  vertical-align: top;
+  padding: 0 10px;
+}
+
+.static-wait-group {
+  width: 515px;
+  div {
+    margin-bottom: 10px;
+  }
+}
+
+.static-wait-button {
+  display: table;
+
+  div {
+    display: table-cell;
+    height: 150px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+  }
+
+  form {
+    position: relative;
+    input[type="submit"] {
+      width: 100%;
+      height: 150px;
+      border-radius: 5px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 30px;
+    }
+  }
+}
+
+.static-wait-count {
+  position: relative;
+  height: 150px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.static-wait-count-title {
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+.static-wait-count-contents {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-bottom: 40px;
+  font-size: 25px;
+}
+
+.static-finish-button {
+  a {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+  }
+
+  form {
+    position: relative;
+    input[type="submit"] {
+      padding: 10px 0;
+      width: 100%;
+      border-radius: 5px;
+      color: white;
+      font-size: 20px;
+    }
+  }
+}
+//.static-wait-button {
+//  float: left;
+//  display: table;
+//  width: 75%;
+//  height: 150px;
+//  a {
+//    display: table-cell;
+//    text-align: center;
+//    vertical-align: middle;
+//    font-size: 30px;
+//  }
+//}
+//
+//.static-wait-count {
+//  float: right;
+//  width: 25%;
+//  height: 150px;
+//}

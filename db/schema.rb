@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20160509082026) do
 
   create_table "members", force: :cascade do |t|
     t.string   "name"
-    t.string   "post"
+    t.string   "post_id"
     t.string   "pasword_digest"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
