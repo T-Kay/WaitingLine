@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :states
   resources :subjects
   resources :members
   get 'static/index'
