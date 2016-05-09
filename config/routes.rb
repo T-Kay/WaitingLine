@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   resources :states
   resources :subjects
   resources :members
