@@ -1,9 +1,19 @@
 Rails.application.routes.draw do
-  resources :respondents
+  # resources :respondents
   resources :posts
   resources :states
-  resources :subjects
-  resources :members
+  resources :subjects, shallow: true do
+    resources :respondents do
+      
+    end
+  end
+  resources :members, shallow: true do
+    resources :respondents do
+      collection do
+        get :history
+      end
+    end
+  end
   get 'static/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
