@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :respondents
   resources :posts
   resources :states
   resources :subjects

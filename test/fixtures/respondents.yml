@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  member_id: 1
+  subject_id: 1
+  state_id: 1
+  answer_time: 2016-05-09 17:20:26
+
+two:
+  member_id: 1
+  subject_id: 1
+  state_id: 1
+  answer_time: 2016-05-09 17:20:26
