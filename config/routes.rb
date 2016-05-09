@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   resources :states
   resources :subjects, shallow: true do
     resources :respondents do
-      
+      collection do
+        get :ranking
+      end
     end
   end
   resources :members, shallow: true do
